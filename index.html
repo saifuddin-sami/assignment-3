@@ -29,17 +29,17 @@
             }        
         }
         @media screen and (min-width: 1024px) {
-            .banner-title-stroke {
+            .title-stroke {
                 -webkit-text-stroke: 1px #212121;
             }
         }
     </style>
 </head>
 
-<body class="font-manrope border-2 border-gray-800">
-    <header class="w-11/12 sm:container mx-auto bg-gradient-to-t from-white to-[#ffffff00]">
+<body class="font-manrope bg-[#f4f4f4] border-2 border-gray-800">
+    <header class="bg-gradient-to-t from-white to-[#ffffff00]">
         <!-- Navbar -->
-        <nav class="my-8 sm:my-10 lg:mt-12 lg:mb-10">
+        <nav class="w-11/12 sm:container mx-auto my-8 sm:my-10 lg:mt-12 lg:mb-10">
             <div class="navbar justify-between items-center p-0 relative">
                 <div class="w-full lg:w-auto flex flex-row-reverse justify-between">
                     <!-- Dropdown Menu -->
@@ -86,7 +86,7 @@
                     <!-- Search Icon -->
                     <button onclick="my_modal_2.showModal()">
                         <div
-                        class="p-[10px] rounded-[50%] border border-[#E9E9E9] flex items-center justify-center text-[#737373] text-2xl hover:bg-[#E9E9E9] hover:text-[#1C1C1C] cursor-pointer">
+                        class="p-[10px] rounded-[50%] border border-[#E9E9E9] flex items-center justify-center bg-white text-[#737373] text-2xl hover:bg-[#E9E9E9] hover:text-[#1C1C1C] cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -104,7 +104,7 @@
                     </dialog>
                     <!-- Cart Icon -->
                     <div
-                        class="p-[10px] rounded-[50%] border border-[#E9E9E9] flex items-center justify-center text-[#737373] text-2xl hover:bg-[#E9E9E9] hover:text-[#1C1C1C] cursor-pointer">
+                        class="p-[10px] rounded-[50%] border border-[#E9E9E9] flex items-center justify-center bg-white text-[#737373] text-2xl hover:bg-[#E9E9E9] hover:text-[#1C1C1C] cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -127,13 +127,13 @@
             </div>
         </nav>
         <!-- Banner Section -->
-        <section class="mb-10 sm:mb-[70px]">
+        <section class="w-11/12 sm:container mx-auto">
             <div>
                 <img src="assets/banner.png" alt="" class="max-w-[70%] sm:max-w-[50%] lg:max-w-[40%] mx-auto mb-4 lg:mb-6">
             </div>
-            <h2 class="max-w-[85%] sm:max-w-[76%] mx-auto text-center text-[#212121] font-extrabold text-[28px] sm:text-[36px] lg:text-[64px] mb-4 lg:mb-6 banner-title-stroke"> A barn house of this design has a striking appearance </h2>
+            <h2 class="max-w-[85%] sm:max-w-[76%] mx-auto text-center text-[#212121] font-extrabold text-[28px] sm:text-[36px] lg:text-[64px] mb-4 lg:mb-6 title-stroke"> A barn house of this design has a striking appearance </h2>
             <p class="text-[#494949] text-[14px] lg:text-[16px] font-medium mb-5 lg:mb-8 text-center w-full sm:max-w-[70%] lg:max-w-[72%] mx-auto"> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light. </p>
-            <div class="btn h-fit border-[#ABEF5F] bg-[rgba(172,239,95,0.5)] rounded-[32px] flex items-center justify-center text-[#212121] font-bold text-xl py-3 w-full mx-auto sm:w-fit sm:px-6 gap-2">
+            <div class="btn h-fit border-[#ABEF5F] bg-[rgba(172,239,95,0.5)] rounded-[32px] flex items-center justify-center text-[#212121] font-bold text-xl py-3 w-full mx-auto sm:w-fit sm:px-6 gap-2 mb-10 sm:mb-[70px] lg:mb-[100px]">
                 View Details
                 <div class="rounded-[32px] bg-[#ABEF5F] w-8 h-8 flex justify-center items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -145,6 +145,58 @@
             </div>
         </section>
     </header>
+    <main>
+        <!-- Section 2 (About Us Section) -->
+        <section class="w-11/12 sm:container mx-auto">
+            <!-- Section 2 Container -->
+             <div class="flex flex-col lg:flex-row gap-6 lg:gap-9 lg:justify-between items-center my-8 sm:my-[72px] lg:my-[100px]">
+                <div class="lg:w-[54%]">
+                    <!-- Text Container -->
+                    <div class="relative mb-6">
+                        <div class="absolute -top-14 -left-12 hidden lg:inline">
+                            <img src="assets/Vector.png" alt="">
+                        </div>
+                        <!-- About Us Button -->
+                        <div class="btn text-[16px] font-bold text-[#494949] px-4 py-2 h-fit bg-white rounded-3xl shadow-none gap-2 hover:bg-[rgba(172,239,95,0.5)] mb-4 flex w-fit mx-auto lg:mx-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                              </svg>
+                              About Us                          
+                        </div>
+                        <h2 class="title-stroke font-extrabold text-[#212121] text-2xl sm:text-[32px] lg:text-[40px] lg:leading-tight max-w-[80%] lg:max-w-[85%] mx-auto text-center lg:text-left lg:mx-0 mb-4 sm:mb-6"> We design thoughtful, liveable spaces </h2>
+                        <p class="text-center lg:text-left text-[#494949] font-medium text-[14px] sm:text-[16px]"> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents. </p>
+                    </div> 
+                    <!-- Box Container -->
+                    <div class="flex gap-4 sm:gap-6 flex-col sm:flex-row lg:flex-col">
+                        <!-- Box 1 -->
+                        <div class="flex p-5 lg:p-6 rounded-2xl bg-white gap-5 hover:shadow-md cursor-pointer">
+                            <div>
+                                <img src="assets/commercial.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-[#494949] font-extrabold text-[16px] sm:text-[18px] lg:text-xl mb-[10px]"> Commercial </h4> 
+                                <p class="text-[#737373] font-medium text-[16px] lg:w-[70%]"> The barn house captivates with its blend of rustic charm and modern. </p>
+                            </div>
+                        </div>
+                        <!-- Box 2  -->
+                        <div class="flex p-5 lg:p-6 rounded-2xl bg-white gap-5 hover:shadow-md cursor-pointer">
+                            <div>
+                                <img src="assets/residential.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-[#494949] font-extrabold text-[16px] sm:text-[18px] lg:text-xl mb-[10px]"> Residential </h4> 
+                                <p class="text-[#737373] font-medium text-[16px] lg:w-[70%]"> The barn house captivates with its blend of rustic charm and modern. </p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <!-- Image Container -->
+                 <div class="w-full lg:w-[46%]">
+                    <img class="w-full object-none object-center h-[220px] sm:h-[385px] lg:h-fit sm:object-cover rounded-2xl" src="assets/Rectangle.png" alt="">
+                 </div>
+             </div>
+        </section>
+    </main>
 </body>
 
 </html>
