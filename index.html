@@ -18,11 +18,26 @@
         .font-manrope {
             font-family: Manrope;
         }
+        /* Banner Title Stroke */
+        .banner-title-stroke {
+            -webkit-text-stroke: 0.5px #212121;
+        }
+        /* Media Query */
+        @media screen and (min-width: 640px) and (max-width: 1024px) {
+            .banner-title-stroke {
+                -webkit-text-stroke: 0.66px #212121;
+            }        
+        }
+        @media screen and (min-width: 1024px) {
+            .banner-title-stroke {
+                -webkit-text-stroke: 1px #212121;
+            }
+        }
     </style>
 </head>
 
 <body class="font-manrope border-2 border-gray-800">
-    <header class="w-11/12 sm:container mx-auto bg-gradient-to-t from-white to-[#ffffff00] border border-red-600">
+    <header class="w-11/12 sm:container mx-auto bg-gradient-to-t from-white to-[#ffffff00]">
         <!-- Navbar -->
         <nav class="my-8 sm:my-10 lg:mt-12 lg:mb-10">
             <div class="navbar justify-between items-center p-0 relative">
@@ -58,25 +73,35 @@
                     </a>
                 </div>
                 <div class="hidden lg:flex">
-                    <ul class="flex gap-9 text-[#737373] text-[16px]">
-                        <li><a class="hover:font-extrabold hover:text-[#494949]">Home</a></li>
-                        <li><a class="hover:font-extrabold hover:text-[#494949]">Services</a></li>
-                        <li><a class="hover:font-extrabold hover:text-[#494949]">Portfolio</a></li>
-                        <li><a class="hover:font-extrabold hover:text-[#494949]">Blogs</a></li>
-                        <li><a class="hover:font-extrabold hover:text-[#494949]">Contact Us</a></li>
+                    <ul class="flex justify-center gap-9">
+                        <li><a class="hover:font-extrabold hover:text-[#494949] cursor-pointer">Home</a></li>
+                        <li><a class="hover:font-extrabold hover:text-[#494949] cursor-pointer">Services</a></li>
+                        <li><a class="hover:font-extrabold hover:text-[#494949] cursor-pointer">Portfolio</a></li>
+                        <li><a class="hover:font-extrabold hover:text-[#494949] cursor-pointer">Blogs</a></li>
+                        <li><a class="hover:font-extrabold hover:text-[#494949] cursor-pointer">Contact Us</a></li>
                     </ul>
                 </div>
                 <!-- Button Container -->
                 <div class="hidden sm:flex gap-4 sm:absolute sm:right-16 lg:static">
                     <!-- Search Icon -->
-                    <div
+                    <button onclick="my_modal_2.showModal()">
+                        <div
                         class="p-[10px] rounded-[50%] border border-[#E9E9E9] flex items-center justify-center text-[#737373] text-2xl hover:bg-[#E9E9E9] hover:text-[#1C1C1C] cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
+                                <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                        </svg>
-                    </div>
+                            </svg>
+                        </div>
+                    </button>
+                    <dialog id="my_modal_2" class="modal">
+                        <div class="modal-box">
+                            <input type="text" placeholder="Search..." class="input input-bordered w-full focus:outline-none"/>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                            <button>close</button>
+                        </form>
+                    </dialog>
                     <!-- Cart Icon -->
                     <div
                         class="p-[10px] rounded-[50%] border border-[#E9E9E9] flex items-center justify-center text-[#737373] text-2xl hover:bg-[#E9E9E9] hover:text-[#1C1C1C] cursor-pointer">
@@ -101,6 +126,24 @@
                 </div>
             </div>
         </nav>
+        <!-- Banner Section -->
+        <section class="mb-10 sm:mb-[70px]">
+            <div>
+                <img src="assets/banner.png" alt="" class="max-w-[70%] sm:max-w-[50%] lg:max-w-[40%] mx-auto mb-4 lg:mb-6">
+            </div>
+            <h2 class="max-w-[85%] sm:max-w-[76%] mx-auto text-center text-[#212121] font-extrabold text-[28px] sm:text-[36px] lg:text-[64px] mb-4 lg:mb-6 banner-title-stroke"> A barn house of this design has a striking appearance </h2>
+            <p class="text-[#494949] text-[14px] lg:text-[16px] font-medium mb-5 lg:mb-8 text-center w-full sm:max-w-[70%] lg:max-w-[72%] mx-auto"> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light. </p>
+            <div class="btn h-fit border-[#ABEF5F] bg-[rgba(172,239,95,0.5)] rounded-[32px] flex items-center justify-center text-[#212121] font-bold text-xl py-3 w-full mx-auto sm:w-fit sm:px-6 gap-2">
+                View Details
+                <div class="rounded-[32px] bg-[#ABEF5F] w-8 h-8 flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-4 text-[#1C1C1C]">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
     </header>
 </body>
 
