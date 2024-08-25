@@ -629,15 +629,78 @@
                     </div>
                     <!-- Image -->
                     <img src="assets/carousel1.jpg" class="w-full object-cover rounded-3xl" />
-                    <!-- Button -->
-                    <div
-                        class="text-center rounded-lg absolute sm:text-2xl h-fit p-2.5 sm:px-6 sm:py-5 backdrop-blur-sm bg-white/20 font-extrabold text-white left-1/2 lg:left-10 bottom-10 sm:bottom-16 lg:bottom-10 -translate-x-1/2 lg:translate-x-0 cursor-pointer hover:bg-white hover:text-gray-900 transition-all ease-in delay-[1ms] active:scale-90">
-                        View Details
+
+                    <!-- View Details Button -->
+                    <!-- The button to open modal -->
+                    <label for="my_modal_7"
+                        class="btn absolute text-center rounded-lg absolute sm:text-2xl h-fit p-2.5 sm:px-6 sm:py-5 backdrop-blur-sm bg-white/20 font-extrabold text-white left-1/2 lg:left-10 bottom-10 sm:bottom-16 lg:bottom-10 -translate-x-1/2 lg:translate-x-0 cursor-pointer hover:bg-white hover:text-gray-900 transition-all ease-in delay-[1ms] active:scale-90 border-none">View
+                        Details</label>
+
+                    <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                    <div class="modal" role="dialog">
+                        <div class="modal-box">
+                            <!-- Content -->
+                            <div class="carousel flex-col gap-10 md:gap-12">
+                                <!-- Card 1 -->
+                                <div class="p-3 sm:p-4 border rounded-xl shadow-lg md:shadow-xl">
+                                    <div>
+                                        <img src="assets/carousel1.jpg" alt="" class="w-full rounded-xl">
+                                    </div>
+                                    <h4
+                                        class="text-[#494949] font-extrabold text-xl sm:text-[24px] text-center mt-5 lg:mt-7 mb-3 lg:mb-4">
+                                        Celestial Cove </h4>
+                                    <p
+                                        class="text-[#494949] font-medium text-[14px] mb-6 lg:mb-8 text-center sm:text-[16px]">
+                                        Transforming architectural visions into extraordinary homes that inspire and
+                                        endure.
+                                    </p>
+                                    <!-- The button to open modal -->
+                                    <label for="my_modal_7"
+                                        class="btn font-extrabold md:text-xl text-[#1C1C1C] bg-[#ABEF5F] py-3 px-5 h-fit rounded-xl w-fit gap-2 w-full border-none sm:w-fit mx-auto flex items-center mb-2.5">Add
+                                        To Favorite</label>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="p-3 sm:p-4 border rounded-xl shadow-lg md:shadow-xl">
+                                    <div>
+                                        <img src="assets/carousel2.jpg" alt="" class="w-full rounded-xl">
+                                    </div>
+                                    <h4
+                                        class="text-[#494949] font-extrabold text-xl sm:text-[24px] text-center mt-5 lg:mt-7 mb-3 lg:mb-4">
+                                        Echo Elms </h4>
+                                    <p
+                                        class="text-[#494949] font-medium text-[14px] mb-6 lg:mb-8 text-center sm:text-[16px]">
+                                        Where innovative design and timeless elegance converge to create your perfect
+                                        sanctuary.
+                                    </p>
+                                    <!-- The button to open modal -->
+                                    <label for="my_modal_7"
+                                        class="btn font-extrabold md:text-xl text-[#1C1C1C] bg-[#ABEF5F] py-3 px-5 h-fit rounded-xl w-fit gap-2 w-full border-none sm:w-fit mx-auto flex items-center mb-2.5">Add
+                                        To Favorite</label>
+                                </div>
+                                <!-- Card 3 -->
+                                <div class="p-3 sm:p-4 border rounded-xl shadow-lg md:shadow-xl">
+                                    <div>
+                                        <img src="assets/carousel3.jpg" alt="" class="w-full rounded-xl">
+                                    </div>
+                                    <h4
+                                        class="text-[#494949] font-extrabold text-xl sm:text-[24px] text-center mt-5 lg:mt-7 mb-3 lg:mb-4">
+                                        Vista Verve </h4>
+                                    <p
+                                        class="text-[#494949] font-medium text-[14px] mb-6 lg:mb-8 text-center sm:text-[16px]">
+                                        Creating homes that embrace sustainability, innovation, and a modern aesthetic.
+                                    </p>
+                                    <!-- The button to open modal -->
+                                    <label for="my_modal_7"
+                                        class="btn font-extrabold md:text-xl text-[#1C1C1C] bg-[#ABEF5F] py-3 px-5 h-fit rounded-xl w-fit gap-2 w-full border-none sm:w-fit mx-auto flex items-center mb-2.5">Add
+                                        To Favorite</label>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="modal-backdrop" for="my_modal_7">Close</label>
                     </div>
                     <!-- Slider Container -->
                     <div class="absolute bottom-5 sm:bottom-10 left-1/2 flex -translate-x-1/2 transform gap-2">
-                        <a href="#slide1"
-                            class="w-10 sm:w-20 h-[6px] bg-white rounded-3xl">
+                        <a href="#slide1" class="w-10 sm:w-20 h-[6px] bg-white rounded-3xl">
                         </a>
                         <a href="#slide2" class="w-10 sm:w-20 h-[6px] bg-white/40 hover:bg-white/60 rounded-3xl"></a>
                         <a href="#slide3" class="w-10 sm:w-20 h-[6px] bg-white/40 hover:bg-white/60 rounded-3xl"></a>
@@ -658,16 +721,16 @@
                     </div>
                     <!-- Image -->
                     <img src="assets/carousel2.jpg" class="w-full object-cover rounded-3xl" />
-                    <!-- Button -->
-                    <div
-                        class="text-center rounded-lg absolute sm:text-2xl h-fit p-2.5 sm:px-6 sm:py-5 backdrop-blur-sm bg-white/20 font-extrabold text-white left-1/2 lg:left-10 bottom-10 sm:bottom-16 lg:bottom-10 -translate-x-1/2 lg:translate-x-0 cursor-pointer hover:bg-white hover:text-gray-900 transition-all ease-in delay-[1ms] active:scale-90">
-                        View Details
-                    </div>
+                    <!-- View Details Button -->
+                    <!-- The button to open modal -->
+                    <label for="my_modal_7"
+                        class="btn absolute text-center rounded-lg absolute sm:text-2xl h-fit p-2.5 sm:px-6 sm:py-5 backdrop-blur-sm bg-white/20 font-extrabold text-white left-1/2 lg:left-10 bottom-10 sm:bottom-16 lg:bottom-10 -translate-x-1/2 lg:translate-x-0 cursor-pointer hover:bg-white hover:text-gray-900 transition-all ease-in delay-[1ms] active:scale-90 border-none">View
+                        Details
+                    </label>
                     <!-- Slider Container -->
                     <div class="absolute bottom-5 sm:bottom-10 left-1/2 flex -translate-x-1/2 transform gap-2">
                         <a href="#slide1" class="w-10 sm:w-20 h-[6px] bg-white/40 hover:bg-white/60 rounded-3xl"></a>
-                        <a href="#slide2"
-                            class="w-10 sm:w-20 h-[6px] bg-white rounded-3xl">
+                        <a href="#slide2" class="w-10 sm:w-20 h-[6px] bg-white rounded-3xl">
                         </a>
                         <a href="#slide3" class="w-10 sm:w-20 h-[6px] bg-white/40 hover:bg-white/60 rounded-3xl"></a>
                     </div>
@@ -687,11 +750,12 @@
                     </div>
                     <!-- Image -->
                     <img src="assets/carousel3.jpg" class="w-full object-cover rounded-3xl" />
-                    <!-- Button -->
-                    <div
-                        class="text-center rounded-lg absolute sm:text-2xl h-fit p-2.5 sm:px-6 sm:py-5 backdrop-blur-sm bg-white/20 font-extrabold text-white left-1/2 lg:left-10 bottom-10 sm:bottom-16 lg:bottom-10 -translate-x-1/2 lg:translate-x-0 cursor-pointer hover:bg-white hover:text-gray-900 transition-all ease-in delay-[1ms] active:scale-90">
-                        View Details
-                    </div>
+                    <!-- View Details Button -->
+                    <!-- The button to open modal -->
+                    <label for="my_modal_7"
+                        class="btn absolute text-center rounded-lg absolute sm:text-2xl h-fit p-2.5 sm:px-6 sm:py-5 backdrop-blur-sm bg-white/20 font-extrabold text-white left-1/2 lg:left-10 bottom-10 sm:bottom-16 lg:bottom-10 -translate-x-1/2 lg:translate-x-0 cursor-pointer hover:bg-white hover:text-gray-900 transition-all ease-in delay-[1ms] active:scale-90 border-none">View
+                        Details
+                    </label>
                     <!-- Slider Container -->
                     <div class="absolute bottom-5 sm:bottom-10 left-1/2 flex -translate-x-1/2 transform gap-2">
                         <a href="#slide1" class="w-10 sm:w-20 h-[6px] bg-white/40 hover:bg-white/60 rounded-3xl"></a>
